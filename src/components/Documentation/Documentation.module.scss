@@ -1,0 +1,30 @@
+.container {
+    padding: 3rem 6rem;
+    background-color: #f6fbff;
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+
+    .documentations {
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            color: #595f6f;
+            margin: 0 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .container {
+        padding: 2.5rem;
+
+        .documentations {
+            flex-direction: column;
+        }
+    }
+}

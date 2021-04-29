@@ -1,0 +1,42 @@
+.container {
+    padding: 6rem;
+}
+
+.section {
+    display: grid;
+    padding: 2rem 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+.support-container, .form-container {
+    width: 90%;
+}
+
+.gray {
+    color: #595f6f;
+}
+
+.small {
+    font-size: .9rem;
+}
+
+
+@media only screen and (max-width: 725px) {
+    .container {
+        padding: 2.5rem;
+    }
+
+    .section {
+        display: block;
+    }
+
+    .support-container, .form-container {
+        width: 100%;
+    }
+    
+    .support-container {
+        &>h2,&>p {
+            text-align: center;
+        }
+    }
+}

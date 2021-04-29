@@ -1,0 +1,56 @@
+.head {
+    color: #595f6f;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.separator {
+    height: 1.5rem;
+    display: block;
+}
+
+.form-elements {
+    width: 80%;
+
+    .element {
+        label {
+            margin: .8rem 0;
+            display: block;
+            color: #595f6f;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            height: 40px;
+        }
+
+        margin: 1rem 0;
+    }
+
+    .btn {
+        width: 11rem;
+        background-color: #ec1c24;
+        padding: .7rem 1rem;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        border: 0;
+        border-radius: .3rem;
+        margin-top: 3rem;
+
+        &::after {
+            margin-left: .5rem;
+            font-size: 2rem;
+            content: "˃";
+            height: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .form-elements {
+        width: 100%;
+    }
+}

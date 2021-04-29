@@ -1,0 +1,81 @@
+.info-container {
+    background-color: #323e47;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .section {
+        padding: 6rem;        
+    }
+
+    .instructions {
+        h2,p {
+            color: #fff;
+        }
+
+        .steps {
+            margin-top: 2rem;
+            .step {
+                margin: 3rem 0;
+                display: flex;
+                align-items: center;
+
+                .num {
+                    min-width: 3rem;
+                    height: 3rem;
+                    border-radius: 1.5rem;
+                    background-color: #ec1c24;
+                    color: #fff;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .instruction {
+                    margin: 0 1rem;
+                    h3,p {
+                        margin-top: 0;
+                        color: #fff;
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .bidding {
+        background-image: linear-gradient(0deg,rgb(255,0,0,.6) 0%, rgb(255,0,0,.6) 100%), url('/images/fcdddd2d445a512229a707ecb654c561.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bidding-labels {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2,p {
+                color: #fff;
+            }
+
+            h2 {
+                text-transform: uppercase;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .info-container {
+        display: block;
+
+        .section {
+            padding: 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.container {
+    padding: 6rem;
+
+    h2{
+        text-align: center;
+    }
+
+    &>p {
+        color: #595f6f;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .instructions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .instruction {
+            width: 45%;
+            display: flex;
+            margin: .8rem 0;
+
+            .icon {
+                min-width: .8rem;
+                height: .8rem;
+                border-radius: .4rem;
+                background-color: #ec1c24;
+            }
+
+            p {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .container {
+        padding: 2.5rem;
+
+        .instructions {
+            display: block;
+
+            .instruction {
+                width: 100%;
+            }
+        }
+    }
+}

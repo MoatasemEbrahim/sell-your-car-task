@@ -1,0 +1,41 @@
+.footer {
+    padding: 3rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .section {
+        max-width: 90%;
+
+        .gray {
+            color: #595f6f;
+        }
+
+        .social-media {
+            display: flex;
+            a {
+                margin-right: .5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .footer {
+        padding: 2.5rem;
+        display: block;
+
+        .section {
+            max-width: 100%;
+            text-align: center;
+
+            &>img {
+                width: 12rem;
+            }
+    
+            .social-media {
+                justify-content: center;
+            }
+        }
+    }
+}
+
